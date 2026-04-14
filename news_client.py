@@ -4,14 +4,14 @@ from ddgs import DDGS
 
 def get_ai_news(max_results=5):
     today = date.today().strftime("%B %d, %Y")
-    query = f"AI artificial intelligence news {today}"
+    query = f"AI news {today}"
 
     results = []
     with DDGS() as ddgs:
-        for r in ddgs.text(query, max_results=max_results):
+        for r in ddgs.news(query, max_results=max_results):
             results.append({
                 "title": r.get("title", ""),
-                "url": r.get("href", ""),
+                "url": r.get("url", ""),
                 "body": r.get("body", "")[:400],
             })
 
