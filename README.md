@@ -2,6 +2,10 @@
 
 > A CLI tool that pulls your unread Gmail, searches for the latest AI news, and delivers a formatted morning briefing — all in under 30 seconds.
 
+## Demo
+
+> Demo GIF coming soon — see [Setup](#setup) to run locally.
+
 ## What This Does
 
 Most people start their day scanning email and checking news separately. This tool combines both into a single terminal command: unread emails get summarized, the latest AI developments from the past 24 hours get surfaced, and Claude synthesizes everything into a clean brief you can read in two minutes.
